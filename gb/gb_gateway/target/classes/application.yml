@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gb_gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: http://47.108.252.16:8848
+        file-extension: yml
+        group: DEFAULT_GROUP
+        username: nacos
+        password: nacos
+        refresh-enabled: true
+        #开启自动刷新
+      discovery:
+        server-addr: http://47.108.252.16:8848
+        username: nacos
+        password: nacos
